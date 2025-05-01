@@ -1,4 +1,3 @@
-# Human-Animal-Conflict
 # Human-Wildlife Conflict Analysis and Prediction
 
 ## Project Overview
