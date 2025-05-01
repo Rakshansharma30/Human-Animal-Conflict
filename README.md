@@ -6,7 +6,7 @@ This project aims to analyze and predict human-wildlife conflict (HWC) using a c
 
 ## Methodology
 
-### 5.1 Data Collection
+### 1 Data Collection
 
 * Government reports and HWC databases from forest departments in India and Nepal
 * Scientific literature and case studies
@@ -15,11 +15,11 @@ This project aims to analyze and predict human-wildlife conflict (HWC) using a c
 
 Each incident was geotagged (where possible) and recorded with metadata, including species, time, severity, and type (e.g., crop damage, livestock loss, human injury).
 
-### 5.2 Grid Mapping and Cell Division
+### 2 Grid Mapping and Cell Division
 
 Each national park or reserve was segmented into a grid of uniform cells. A grid cell was assigned coordinates (i, j) with a conflict score derived from incident frequency and severity.
 
-### 5.3 Conflict Scoring System
+### 3 Conflict Scoring System
 
 A scoring rubric was applied to standardize data:
 
@@ -29,7 +29,7 @@ A scoring rubric was applied to standardize data:
 * 3: Human injury or recurring property damage
 * 4: Human fatality or frequent multi-species incidents
 
-### 5.4 Data Preprocessing
+### 4 Data Preprocessing
 
 Steps involved:
 
@@ -38,10 +38,10 @@ Steps involved:
 * Normalizing date and time fields
 * Binning locations into grid coordinates using spatial transformation
 
-### 5.5 Visualization Tools
+### 5 Visualization Tools
 *(Details on visualization tools used would be added here)*
 
-### 5.6 Algorithm Design
+### 6 Algorithm Design
 
 A machine learning approach was employed to predict HWC risk.
 
@@ -66,7 +66,7 @@ A machine learning approach was employed to predict HWC risk.
 
 4.  **Conflict Risk Prediction:** The trained model was used to predict the probability of conflict occurrence for each grid cell, which was then translated into a conflict risk level.
 
-### 5.7 Model Evaluation
+### 7 Model Evaluation
 
 The performance of the conflict risk prediction model was evaluated using metrics such as:
 
@@ -75,7 +75,7 @@ The performance of the conflict risk prediction model was evaluated using metric
 * F1-score
 * Confusion Matrix
 
-### 5.8 System Implementation
+### 8 System Implementation
 
 The methodology was implemented using Python libraries, including:
 
@@ -89,13 +89,13 @@ The system comprises two main components:
 1.  Data Processing Module (`Data Processing.py`): Performs data handling, HSI calculation, and synthetic data generation.
 2.  Interactive Dashboard (`wildlife_conflict_dashboard.py`): Provides a user interface for data exploration, risk visualization, and simulations.
 
-### 5.9 Limitations
+### 9 Limitations
 
 * Data quality and availability
 * Use of synthetic conflict data
 * Model assumptions regarding species-habitat relationships and conflict drivers
 
-### 5.10 Future Research
+### 10 Future Research
 
 * Improving data collection methods
 * Refining the HSI model
